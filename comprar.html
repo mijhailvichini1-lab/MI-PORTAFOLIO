@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar Producto - Burger House</title>
+    <link rel="stylesheet" href="css/estilo.css"> 
+    <link rel="stylesheet" href="css/compra.css">
+    </head>
+
+<body>
+    <header>
+        <div class="menu container">
+            <img class="logo-1" src="images/images/logo.svg" alt="">
+            <nav class="navbar">
+                <div class="menu-1">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="novedades.html">Novedades</a></li>
+                        <li><a href="menu.html">Productos</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="compra-container">
+        <section class="product-detail">
+            <div class="detail-img">
+                <img id="product-image" src="" alt="Imagen del producto">
+            </div>
+            <div class="detail-txt">
+                <h2 id="product-name">Nombre del Producto</h2>
+                <p id="product-description">Descripción detallada del producto...</p>
+                <p id="product-ingredients">Ingredientes: Carne, queso, lechuga, tomate.</p>
+                <span class="price" id="product-price">BS 0.00</span>
+
+                <div class="quantity-control">
+                    <button id="decrement-btn">-</button>
+                    <input type="text" id="quantity-input" value="1" readonly>
+                    <button id="increment-btn">+</button>
+                </div>
+
+                <a href="#" id="open-payment-modal" class="checkout-btn">Proceder al Pago</a>
+            </div>
+        </section>
+
+        <p style="text-align: center; color: #A7A7A7; margin-top: 30px;">
+            <a href="menu.html" class="btn-1" style="border: none; background-color: #555555; margin-right: 0;">Volver al Menú</a>
+        </p>
+    </main>
+
+    <div id="payment-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Simulación de Pago con Tarjeta</h3>
+            <form id="payment-form">
+                <label for="card-number">Número de Tarjeta (16 dígitos)</label>
+                <input type="text" id="card-number" placeholder="XXXX XXXX XXXX XXXX" required maxlength="19">
+                
+                <label for="card-name">Nombre en la Tarjeta</label>
+                <input type="text" id="card-name" placeholder="Ej: JUAN PEREZ" required>
+                
+                <label for="expiry-date">Fecha de Vencimiento (MM/AA)</label>
+                <input type="text" id="expiry-date" placeholder="MM/AA" required maxlength="5">
+                
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" placeholder="XXX" required maxlength="4">
+                
+                <button type="submit" class="payment-submit">Pagar Ahora</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn confirmation-close">&times;</span>
+            <h3>¡Gracias por su compra! 🚀</h3>
+            <p style="color: #FFFFFF;">Su pedido ha sido procesado con éxito. Puede pedir Delivery o pasar a recoger su pedido.</p>
+            <p style="color: #A7A7A7; margin-top: 15px;">¡Es una simulación! Los datos ingresados no se guardaron.</p>
+        </div>
+    </div>
+    
+    <script src="js/compra.js"></script>
+</body>
+
+</html>

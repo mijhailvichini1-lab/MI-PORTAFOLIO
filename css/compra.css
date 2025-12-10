@@ -1,0 +1,200 @@
+/* Estilos específicos para la página de compra */
+.compra-container {
+    max-width: 900px;
+    margin: 150px auto 50px auto;
+    padding: 40px;
+    background-color: #141414;
+    border-radius: 15px;
+    color: #FFFFFF;
+}
+
+.product-detail {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.detail-img img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.detail-txt h2 {
+    font-size: 40px;
+    color: #DB241B;
+    margin-bottom: 10px;
+}
+
+.detail-txt p {
+    font-size: 18px;
+    color: #A7A7A7;
+    margin-bottom: 20px;
+}
+
+.detail-txt .price {
+    font-size: 24px;
+    font-weight: 800;
+    color: #FFFFFF;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.quantity-control button {
+    background-color: #DB241B;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.quantity-control input {
+    width: 50px;
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #555555;
+    background-color: #0d0d0d;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.checkout-btn {
+    padding: 15px 35px;
+    background-color: #DB241B;
+    color: #FFFFFF;
+    font-weight: 800;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.checkout-btn:hover {
+    background-color: #ab1c15;
+}
+
+/* ESTILOS DE VENTANA FLOTANTE (MODAL) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: #0d0d0d;
+    margin: 10% auto;
+    padding: 30px;
+    border: 1px solid #DB241B;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    position: relative;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Animación para que aparezca desde arriba */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.close-btn {
+    color: #DB241B;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content h3 {
+    color: #DB241B;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.modal-content label {
+    display: block;
+    margin-bottom: 8px;
+    color: #A7A7A7;
+}
+
+.modal-content input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    background-color: #141414;
+    color: #FFFFFF;
+}
+
+.modal-content .payment-submit {
+    width: 100%;
+    background-color: #DB241B;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.modal-content .payment-submit:hover {
+    background-color: #ab1c15;
+}
+
+/* Modal de Confirmación de Compra */
+#confirmation-modal .modal-content {
+    text-align: center;
+    border: 1px solid #ab1c15; /* Verde para confirmación */
+}
+
+#confirmation-modal h3 {
+    color: #ab1c15;
+    font-size: 30px;
+}
+
+@media (max-width: 768px) {
+    .compra-container {
+        margin: 100px 20px 50px 20px;
+        padding: 20px;
+    }
+    .product-detail {
+        flex-direction: column;
+        text-align: center;
+    }
+    .detail-img img {
+        width: 100%;
+        max-width: 250px;
+    }
+    .detail-txt h2 {
+        font-size: 30px;
+    }
+    .quantity-control {
+        justify-content: center;
+    }
+}

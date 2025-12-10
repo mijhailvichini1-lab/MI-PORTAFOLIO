@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
 <html lang="en">
 
 <head>
@@ -7,130 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="estilo.css" />
+    <link rel="stylesheet" href="css/estilo.css" />
 </head>
 
 <body>
     <header>
-        <div class="menu container">
-            <img class="logo-1" src="images/images/logo.svg" alt="">
-            <input type="checkbox" id="menu">
-            <label for="menu">
-                <img src="images/images/menu.png" class="menu-icono" alt="">
-            </label>
-            <nav class="navbar">
-                <div class="menu-1">
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Servicios</a></li>
-                        <li><a href="#">Productos</a></li>
-                    </ul>
-                </div>
-
-                <img class="logo-2" src="images/images/logo.svg" alt="">
-
-                <div class="menu-2">
-                    <ul>
-                        <li><a href="#">Horario</a></li>
-                    </ul>
-                    <div class="socials">
-                        <a href="#">
-                            <div class="social">
-                                <img src="images/images/s1.svg" alt="">
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="social">
-                                <img src="images/images/s2.svg" alt="">
-                            </div>
-                        </a>
-                        </a>
-                        <a href="#">
-                            <div class="social">
-                                <img src="images/images/s3.svg" alt="">
-                            </div>
-                        </a>
-
-                    </div>
-                </div>
-            </nav>
-        </div>
-
-        <div class="header-content container">
-            <div class="swiper mySwiper-1">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="slider">
-                            <div class="slider-txt">
-                                <h1>Hamburguesa</h1>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Provident minima quisquam,
-                                    dolorum deleniti beatae vel eos
-                                </p>
-
-                                <div class="botones">
-                                    <a href="#" class="btn-1">Comprar</a>
-                                    <a href="#" class="btn-2">Menu</a>
-                                </div>
-                            </div>
-
-                            <div class="slider-img">
-                                <img src="images/images/slider1.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slider">
-                            <div class="slider-txt">
-                                <h1>Torta</h1>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Provident minima quisquam,
-                                    dolorum deleniti beatae vel eos
-                                </p>
-
-                                <div class="botones">
-                                    <a href="#" class="btn-1">Comprar</a>
-                                    <a href="#" class="btn-2">Menu</a>
-                                </div>
-                            </div>
-
-                            <div class="slider-img">
-                                <img src="images/images/slider2.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slider">
-                            <div class="slider-txt">
-                                <h1>Hamburguesa</h1>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Provident minima quisquam,
-                                    dolorum deleniti beatae vel eos
-                                </p>
-
-                                <div class="botones">
-                                    <a href="#" class="btn-1">Comprar</a>
-                                    <a href="#" class="btn-2">Menu</a>
-                                </div>
-                            </div>
-
-                            <div class="slider-img">
-                                <img src="images/images/slider3.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
+    <div class="menu container">
+        <img class="logo-1" src="images/images/logo.svg" alt="">
+        <input type="checkbox" id="menu">
+        <label for="menu">
+            <img src="images/images/menu.png" class="menu-icono" alt="">
+        </label>
+        <nav class="navbar">
+            <div class="menu-1">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="novedades.html">Novedades</a></li>
+                    <li><a href="menu.html">Productos</a></li>
+                </ul>
             </div>
 
+            <img class="logo-2" src="images/images/logo.svg" alt="">
 
-        </div>
-    </header>
+            <div class="menu-2">
+                <ul>
+                    <li><a href="#horario">Horario</a></li>
+                </ul>
+                <div class="socials">
+                    <a href="#"><div class="social"><img src="images/images/s1.svg" alt=""></div></a>
+                    <a href="#"><div class="social"><img src="images/images/s2.svg" alt=""></div></a>
+                    <a href="#"><div class="social"><img src="images/images/s3.svg" alt=""></div></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="header-content container">
+        <div class="swiper mySwiper-1">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+                    <div class="slider">
+                        <div class="slider-txt">
+                            <h1>Burger Especial</h1>
+                            <p>Carne de res a la parrilla, lechuga, tomate, cebolla, pepinillo y mayonesa. El clásico que nunca pasa de moda.</p>
+                            <div class="botones">
+                                <a href="#" id="comprar-btn-0" class="btn-1">Comprar</a> 
+                                <a href="menu.html" class="btn-2">Menu</a>
+                            </div>
+                        </div>
+                        <div class="slider-img">
+                            <img src="images/images/b.png" alt="Whopper Clásica">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slider">
+                        <div class="slider-txt">
+                            <h1>Sandwich Especial</h1>
+                            <p>Jamón, queso y vegetales frescos sobre pan artesanal. Ideal para un desayuno o almuerzo ligero.</p>
+                            <div class="botones">
+                                <a href="#" id="comprar-btn-1" class="btn-1">Comprar</a>
+                                <a href="menu.html" class="btn-2">Menu</a>
+                            </div>
+                        </div>
+                        <div class="slider-img">
+                            <img src="images/images/food2.png" alt="Sandwich Especial">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slider">
+                        <div class="slider-txt">
+                            <h1>Bacon Doble</h1>
+                            <p>Doble carne de res, tocino crujiente, queso y salsa especial.</p>
+                            <div class="botones">
+                                <a href="#" id="comprar-btn-2" class="btn-1">Comprar</a>
+                                <a href="menu.html" class="btn-2">Menu</a>
+                            </div>
+                        </div>
+                        <div class="slider-img">
+                            <img src="images/images/BaconDoble.png" alt="Rodeo Burger">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+        </div> </div> </header>
 
 
 
@@ -147,12 +115,12 @@
                             <div class="product">
                                 <div class="product-img">
                                     <h4>Nuevo</h4>
-                                    <img src="images/images/food1.png" alt="">
+                                    <img src="images/images/Whopper.png" alt="">
                                 </div>
                                 <div class="product-txt">
                                     <h4>Producto</h4>
-                                    <p>calidad premium</p>
-                                    <span class="price">BS80.00</span>
+                                    <p>Carne de res a la parrilla, lechuga, tomate, cebolla, pepinillo y mayonesa.</p>
+                                    <span class="price">BS 35.00</span>
                                 </div>
                             </div>
                         </div>
@@ -162,12 +130,12 @@
                             <div class="product">
                                 <div class="product-img">
                                     <h4>Nuevo</h4>
-                                    <img src="images/images/food2.png" alt="">
+                                    <img src="images/images/WhopperDoble.png" alt="">
                                 </div>
                                 <div class="product-txt">
                                     <h4>Producto</h4>
-                                    <p>calidad premium</p>
-                                    <span class="price">BS80.00</span>
+                                    <p>Doble carne de res, doble queso, vegetales frescos y salsa especial.</p>
+                                    <span class="price">BS 45.00</span>
                                 </div>
                             </div>
                         </div>
@@ -176,12 +144,12 @@
                             <div class="product">
                                 <div class="product-img">
                                     <h4>Nuevo</h4>
-                                    <img src="images/images/food3.png" alt="">
+                                    <img src="images/images/Rodeo.png" alt="">
                                 </div>
                                 <div class="product-txt">
                                     <h4>Producto</h4>
-                                    <p>calidad premium</p>
-                                    <span class="price">BS80.00</span>
+                                    <p>Carne de res, aros de cebolla, queso cheddar y salsa BBQ.</p>
+                                    <span class="price">BS 38.00</span>
                                 </div>
                             </div>
                         </div>
@@ -198,124 +166,114 @@
             </div>
             <!-- 2 -->
 
-            <input type="radio" name="tabs" id="tab2" checked="checked" class="tabInput" value="2">
+            <!-- 2 -->
+            <input type="radio" name="tabs" id="tab2" class="tabInput" value="2">
             <label for="tab2">Burritos</label>
             <div class="tab">
                 <div class="swiper mySwiper-2" id="swiper2">
                     <div class="swiper-wrapper">
-                        <!-- agregar mas platos -->
+                        <!-- Taco Mexicano -->
                         <div class="swiper-slide">
                             <div class="product">
                                 <div class="product-img">
                                     <h4>Nuevo</h4>
-                                    <img src="images/images/food4.png" alt="">
+                                    <img src="images/images/crunchytaco.jpg" alt="Taco Mexicano">
                                 </div>
                                 <div class="product-txt">
-                                    <h4>Producto</h4>
-                                    <p>calidad premium</p>
-                                    <span class="price">BS80.00</span>
+                                    <h4>Crunchy Taco</h4>
+                                    <p>Carne, cebolla y cilantro.</p>
+                                    <span class="price">Bs 18.00</span>
                                 </div>
                             </div>
                         </div>
 
-
+                        <!-- Taco al Pastor -->
                         <div class="swiper-slide">
                             <div class="product">
                                 <div class="product-img">
                                     <h4>Nuevo</h4>
-                                    <img src="images/images/food5.png" alt="">
+                                    <img src="images/images/tacos.jpg" alt="Taco al Pastor">
                                 </div>
                                 <div class="product-txt">
-                                    <h4>Producto</h4>
-                                    <p>calidad premium</p>
-                                    <span class="price">BS80.00</span>
+                                    <h4>Taco al Pastor</h4>
+                                    <p>Carne marinada con piña.</p>
+                                    <span class="price">Bs 20.00</span>
                                 </div>
                             </div>
                         </div>
 
+                        <!-- Taco Mixto -->
                         <div class="swiper-slide">
                             <div class="product">
                                 <div class="product-img">
                                     <h4>Nuevo</h4>
-                                    <img src="images/images/food6.png" alt="">
+                                    <img src="images/images/menucompletotrestacossupreme.jpg" alt="Taco Mixto">
                                 </div>
                                 <div class="product-txt">
-                                    <h4>Producto</h4>
-                                    <p>calidad premium</p>
-                                    <span class="price">BS80.00</span>
+                                    <h4>Taco Mixto Supreme</h4>
+                                    <p>Pollo, carne y queso.</p>
+                                    <span class="price">Bs 25.00</span>
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
-
-
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
-
-
                 </div>
             </div>
-
             <!-- 3 -->
-            <input type="radio" name="tabs" id="tab3" checked="checked" class="tabInput" value="3">
+            <input type="radio" name="tabs" id="tab3" class="tabInput" value="3">
             <label for="tab3">Variedad</label>
             <div class="tab">
                 <div class="swiper mySwiper-2" id="swiper3">
                     <div class="swiper-wrapper">
-                        <!-- agregar mas platos -->
+                        <!-- Brocheta de Pollo -->
                         <div class="swiper-slide">
                             <div class="product">
                                 <div class="product-img">
                                     <h4>Nuevo</h4>
-                                    <img src="images/images/food7.png" alt="">
+                                    <img src="images/images/food7.png" alt="Brocheta de Pollo">
                                 </div>
                                 <div class="product-txt">
-                                    <h4>Producto</h4>
-                                    <p>calidad premium</p>
-                                    <span class="price">BS80.00</span>
+                                    <h4>Brocheta de Pollo</h4>
+                                    <p>Brocheta de pollo con ensalada y arroz.</p>
+                                    <span class="price">Bs 35.00</span>
                                 </div>
                             </div>
                         </div>
 
-
+                        <!-- Brocheta de Carne -->
                         <div class="swiper-slide">
                             <div class="product">
                                 <div class="product-img">
                                     <h4>Nuevo</h4>
-                                    <img src="images/images/food8.png" alt="">
+                                    <img src="images/images/food8.png" alt="Brocheta de Carne">
                                 </div>
                                 <div class="product-txt">
-                                    <h4>Producto</h4>
-                                    <p>calidad premium</p>
-                                    <span class="price">BS80.00</span>
+                                    <h4>Brocheta de Carne</h4>
+                                    <p>Brocheta de carne con ensalada y arroz.</p>
+                                    <span class="price">Bs 38.00</span>
                                 </div>
                             </div>
                         </div>
 
+                        <!-- Pizza -->
                         <div class="swiper-slide">
                             <div class="product">
                                 <div class="product-img">
                                     <h4>Nuevo</h4>
-                                    <img src="images/images/food9.png" alt="">
+                                    <img src="images/images/food9.png" alt="Pizza">
                                 </div>
                                 <div class="product-txt">
-                                    <h4>Producto</h4>
-                                    <p>calidad premium</p>
-                                    <span class="price">BS80.00</span>
+                                    <h4>Pizza</h4>
+                                    <p>Pizza recién horneada con queso, tomate y tus ingredientes favoritos.</p>
+                                    <span class="price">Bs 45.00</span>
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
-
-
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
-
-
                 </div>
             </div>
 
@@ -328,261 +286,160 @@
 
     <section class="info container">
         <div class="info-img">
-            <img src="images/images/info.png" alt="">
+            <img src="images/images/LongRodeo.png" alt="">
         </div>
 
         <div class="info-txt">
             <h2>Informacion</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis dolorem ducimus quas amet maiores
-                fuga, nemo ratione nesciunt aspernatur cupiditate nobis cumque, laudantium sunt similique. Corrupti
-                magnam neque labore. Nihil!</p>
-            <a href="#" class="btn-2">Mas informacion</a>
+            <p>¡Justo el sabor que buscas!
+                Carne de res a la parrilla, queso americano, aros de cebolla crujientes, salsa BBQ ¿ya se te antojó,
+                verdad? ¡Pídela en COMBO con papas fritas y refresco frío!</p>
+            <a href="menu.html" class="btn-2">Mas informacion</a>
         </div>
     </section>
 
     <section class="info container">
-    <div class="info-img">
-        <img src="images/images/info.png" alt="">
-    </div>
+        <div class="info-img">
+            <img src="images/images/KingPollo.png" alt="">
+        </div>
 
-    <div class="info-txt">
-        <h2>Informacion</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis dolorem ducimus quas amet maiores fuga, nemo ratione nesciunt aspernatur cupiditate nobis cumque, laudantium sunt similique. Corrupti magnam neque labore. Nihil!</p>
-        <a href="#" class="btn-2">Mas informacion</a>
-    </div>
-</section>
+        <div class="info-txt">
+            <h2>Informacion</h2>
+            <p>El mejor sándwich de pollo.
+                Nuestro original King de Pollo® se prep ara con pollo empanizado con dos rebanadas de queso americano,
+                lechuga, mayonesa cremosa sobre un pan suave alargado con ajonjolí ¡Pídela en COMBO con papas fritas y
+                refresco frío!
 
-<section class="horario">
-    <div class="horario-info container">
-        <h2>Horario</h2>
+            </p>
+            <a href="menu.html" class="btn-2">Mas informacion</a>
+        </div>
+    </section>
 
-        <div class="horario-txt">
-            <div class="txt">
-                <h4>Direccion</h4>
-                <p>Lemo ratione nesciunt</p>
-                <p>Aspernatur cupiditate nobis cumque</p>
-            </div>
+    <section class="horario" id="horario">
 
-            <div class="txt">
-                <h4>Horario</h4>
-                <p>Lunes a Viernes : 9 am - 8 pm</p>
-                <p>Sabado y Domingo : 11 am - 7 pm</p>
-            </div>
+        <div class="horario-info container">
+            <h2>Horario</h2>
 
-            <div class="txt">
-                <h4>Telefono</h4>
-                <p>55555555</p>
-                <p>55555555</p>
-            </div>
+            <div class="horario-txt">
+                <div class="txt">
+                    <h4>Direccion</h4>
+                    <p>Av. 16 de Julio (El Prado)</p>
+                    <p>Edificio 123, Zona Central</p>
+                </div>
 
-            <div class="txt">
-                <h4>Redes Sociales</h4>
-                <div class="socials">
-                    <a href="#">
-                        <div class="social">
-                            <img src="images/images/s1.svg" alt="">
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="social">
-                            <img src="images/images/s2.svg" alt="">
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="social">
-                            <img src="images/images/s3.svg" alt="">
-                        </div>
-                    </a>
+                <div class="txt">
+                    <h4>Horario</h4>
+                    <p>Lunes a Viernes : 9 am - 8 pm</p>
+                    <p>Sabado y Domingo : 11 am - 7 pm</p>
+                </div>
+
+                <div class="txt">
+                    <h4>Telefono</h4>
+                    <p>+591 2 2223344 (Fijo)</p>
+                    <p>+591 77712345 (WhatsApp)</p>
+                </div>
+
+                <div class="txt">
+                    <h4>Redes Sociales</h4>
+                    <div class="socials">
+                        <a href="#">
+                            <div class="social">
+                                <img src="images/images/s1.svg" alt="">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="images/images/s2.svg" alt="">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="images/images/s3.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
-<!-- mapa -->
-<section>
+    <!-- mapa -->
+    <section>
 
-    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122403.41295297755!2d-68.12407749999998!3d-16.52071235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915edf0a04f5a40f%3A0x57dbfc76b4458ab3!2sLa%20Paz!5e0!3m2!1ses-419!2sbo!4v1764944490242!5m2!1ses-419!2sbo" width="100%" height="500"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    
-</section>
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122403.41295297755!2d-68.12407749999998!3d-16.52071235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915edf0a04f5a40f%3A0x57dbfc76b4458ab3!2sLa%20Paz!5e0!3m2!1ses-419!2sbo!4v1764944490242!5m2!1ses-419!2sbo"
+            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-<!-- pie de pagina -->
- <footer class="footer container">
-    <img class="logo-2" src="images/logo.svg" alt="">
-    
+    </section>
+<!-- FOOTER -->
+<footer class="footer container">
+
+    <!-- LOGO -->
+
+
+    <!-- SECCIÓN 1 -->
     <div class="links">
-        <h4>lorem</h4>
+        <h4>Nosotros</h4>
         <ul>
-            <li><a href="#">lorem</a></li>
-            <li><a href="#">lorem</a></li>
-            <li><a href="#">lorem</a></li>
-            <li><a href="#">lorem</a></li>
+            <li><a href="#">Quiénes somos</a></li>
+            <li><a href="#">Nuestra historia</a></li>
+            <li><a href="#">Compromiso de calidad</a></li>
+            <li><a href="#">Ubicaciones</a></li>
         </ul>
     </div>
 
+    <!-- SECCIÓN 2 -->
     <div class="links">
-        <h4>lorem</h4>
+        <h4>Servicios</h4>
         <ul>
-            <li><a href="#">lorem</a></li>
-            <li><a href="#">lorem</a></li>
-            <li><a href="#">lorem</a></li>
-            <li><a href="#">lorem</a></li>
+            <li><a href="#">Menú completo</a></li>
+            <li><a href="#">Promociones</a></li>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">Eventos y catering</a></li>
         </ul>
     </div>
 
+    <!-- SECCIÓN 3 -->
     <div class="links">
-        <h4>lorem</h4>
+        <h4>Atención al Cliente</h4>
         <ul>
-            <li><a href="#">lorem</a></li>
-            <li><a href="#">lorem</a></li>
-            <li><a href="#">lorem</a></li>
-            <li><a href="#">lorem</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Preguntas frecuentes</a></li>
+            <li><a href="#">Políticas de privacidad</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
         </ul>
     </div>
 
-        <div class="links">
-        <h4>Redes</h4>
+    <!-- REDES SOCIALES -->
+    <div class="links">
+        <h4>Síguenos</h4>
         <div class="socials">
-            <a href="#"><div class="social"><img src="images/images/s1.svg"></div></a>
-            <a href="#"><div class="social"><img src="images/images/s2.svg"></div></a>
-            <a href="#"><div class="social"><img src="images/images/s3.svg"></div></a>
+            <a href="#">
+                <div class="social"><img src="images/images/s1.svg" alt=""></div>
+            </a>
+            <a href="#">
+                <div class="social"><img src="images/images/s2.svg" alt=""></div>
+            </a>
+            <a href="#">
+                <div class="social"><img src="images/images/s3.svg" alt=""></div>
+            </a>
         </div>
     </div>
+
 </footer>
 
-
-
-
-
-
-
+<!-- COPYRIGHT (opcional) -->
+<div class="copy">
+    © 2025 Burger House — Todos los derechos reservados.
+</div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 
-=======
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NutriFit - Comida Saludable</title>
-    <link rel="stylesheet" href="css/style.css">
 
-<body>
-
-    <header class="main-header">
-        <div class="logo">NUTRIFIT</div>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#pedir-aqui">Pide Aquí</a></li>
-                <li><a href="#menu">Menú</a></li>
-                <li><a href="#cupones">Descuentos</a></li>
-                <li><a href="#delivery">Delivery</a></li>
-                <li><a href="#restaurantes">Sucursales</a></li>
-                <li><a href="#novedades">Novedades</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="hero-banner">
-        <div class="banner-content">
-            <span class="etiqueta-nueva">¡NUEVO!</span>
-            <h1>NUTRI-BOWL DETOX</h1>
-            <p class="tagline">Sabor Fresco, Energía Intensa</p>
-            <div class="cta-banner">
-                <a href="#pedir-bowl" class="btn-primary">Pide aquí</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="info-section light-bg">
-        <div class="container ubicaciones-container">
-            <div class="ubicaciones-card">
-                <h2>Ubicaciones</h2>
-                <p>Encuentra tu sucursal NutriFit más cercana</p>
-                <div class="search-box">
-                    <input type="text" placeholder="Tu ciudad o dirección">
-                    <button type="submit">></button>
-                </div>
-            </div>
-            <div class="illustration">
-                </div>
-        </div>
-    </section>
-
-    <section class="delivery-section">
-        <div class="container delivery-content">
-            <div class="delivery-box">
-                <h2>Servicio a Domicilio</h2>
-                <p>Realiza tu pedido en línea</p>
-                <div class="delivery-apps">
-                    <div class="app-logo">PEDIDOS YA</div>
-                    <div class="app-logo">YA-N-GO</div>
-                </div>
-                <a href="#ordenar-delivery" class="btn-secondary">Ordenar ahora</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="info-section">
-        <div class="container">
-            <h2 class="section-title">Novedades</h2>
-            <div class="promociones-grid">
-                <div class="promo-card">
-                    <div class="etiqueta-promo">2x1 en Postre FIT</div>
-                    <p>¡Una deliciosa oferta ha llegado!</p>
-                </div>
-                <div class="promo-card">
-                    <h3>¡NUEVOS VEGGIE WRAPS!</h3>
-                    <p>¡Disfrútalos a tu manera!</p>
-                </div>
-                <div class="promo-card">
-                    <h3>Colección FIT Descuento</h3>
-                    <p>Renovamos nuestra colección de platos saludables.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="app-download-section">
-        <div class="container app-content">
-            <div class="app-mockup">
-                 </div>
-            <div class="app-text">
-                <h2>Descarga nuestra app</h2>
-                <p>y descubre las increíbles ofertas que tenemos para ti.</p>
-                <div class="app-stores">
-                    </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="main-footer">
-        <div class="container footer-grid">
-            <div class="footer-logo">NUTRIFIT</div>
-            <div class="footer-info">
-                <h4>Información</h4>
-                <ul>
-                    <li><a href="#">Sucursales</a></li>
-                    <li><a href="#">Novedades</a></li>
-                    <li><a href="#">Política de Privacidad</a></li>
-                    <li><a href="#">Términos y Condiciones</a></li>
-                    <li><a href="#">Contáctanos</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>&copy; 2023 NutriFit Corporation. All Rights Reserved.</p>
-            <div class="social-links">
-                <a href="#">Facebook</a> | <a href="#">Instagram</a>
-            </div>
-        </div>
-    </footer>
-
-</body>
->>>>>>> bd234d7bf14cded0e14462f3588b5a6e9c2815a3
 </html>

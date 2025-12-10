@@ -1,4 +1,4 @@
-// ==== 1. DATOS DE LOS PRODUCTOS DEL SLIDER ====
+
 const sliderProducts = [
     {
         titulo: "Burger Especial",
@@ -20,7 +20,7 @@ const sliderProducts = [
     }
 ];
 
-// ==== 2. FUNCIÓN PARA GENERAR LA URL DE COMPRA ====
+
 
 function getCompraUrl(producto) {
     const urlName = encodeURIComponent(producto.titulo);
@@ -31,23 +31,23 @@ function getCompraUrl(producto) {
 }
 
 
-// ==== 3. FUNCIÓN PRINCIPAL PARA ASIGNAR ENLACES A TODOS LOS BOTONES ====
+
 
 function setAllCompraLinks() {
-    // Iteramos sobre el arreglo de productos
+    
     sliderProducts.forEach((producto, index) => {
-        // Buscamos el botón con el ID correspondiente al índice (comprar-btn-0, comprar-btn-1, etc.)
+        
         const boton = document.getElementById(`comprar-btn-${index}`);
         
         if (boton) {
-            // Generamos la URL y la asignamos directamente al atributo href
+            
             boton.href = getCompraUrl(producto);
         }
     });
 }
 
 
-// ==== 4. INICIALIZACIÓN DEL SWIPER 1 (Simplificado) ====
+
 
 var swiper1 = new Swiper(".mySwiper-1", {
     slidesPerView: 1,
@@ -61,17 +61,17 @@ var swiper1 = new Swiper(".mySwiper-1", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-    // Eliminamos el evento 'slideChange' porque los enlaces ya están listos
+    
     on: {
         init: function() {
-            // Llamamos a la función al inicio para establecer todos los enlaces
+            
             setAllCompraLinks();
         }
     }
 });
 
 
-// ==== 5. INICIALIZACIÓN DEL SWIPER 2 y LÓGICA DE PESTAÑAS (Sin cambios) ====
+
 
 var swiper2 = new Swiper(".mySwiper-2", {
     slidesPerView: 3,
@@ -102,5 +102,5 @@ tabInputs.forEach(function(input) {
     });
 });
 
-// Llamamos a la función de asignación de enlaces por si el evento 'init' del swiper no se dispara
+
 setAllCompraLinks();

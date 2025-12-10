@@ -1,32 +1,30 @@
-// Lógica de JavaScript para la página de compra (comprar.html)
 
-// --- 1. Inicialización de Datos del Producto ---
-// Función para obtener parámetros de la URL
+
+
+
 const urlParams = new URLSearchParams(window.location.search);
 const productName = urlParams.get('name') || 'Producto Desconocido';
 const productDesc = urlParams.get('desc') || 'Detalle no disponible.';
-// Asegurar que el precio sea un número flotante
+
 const productPrice = parseFloat(urlParams.get('price')) || 0.00; 
 const productImage = urlParams.get('img') || 'images/default.png'; 
 
-// Actualizar el contenido de la página con los datos de la URL
+
 document.getElementById('product-name').textContent = productName;
 document.getElementById('product-description').textContent = productDesc;
 document.getElementById('product-price').textContent = `BS ${productPrice.toFixed(2)}`;
 document.getElementById('product-image').src = productImage;
 
 
-// --- 2. Control de Cantidad y Precio Total ---
+
 const quantityInput = document.getElementById('quantity-input');
 const decrementBtn = document.getElementById('decrement-btn');
 const incrementBtn = document.getElementById('increment-btn');
 
-/**
- * Actualiza el precio total basado en la cantidad actual.
- */
+
 function updatePrice() {
     const quantity = parseInt(quantityInput.value);
-    // Calcula el nuevo precio y lo formatea a 2 decimales
+
     const newPrice = (productPrice * quantity).toFixed(2); 
     document.getElementById('product-price').textContent = `BS ${newPrice}`;
 }
@@ -46,7 +44,7 @@ incrementBtn.addEventListener('click', () => {
 });
 
 
-// --- 3. Lógica del Modal de Pago y Confirmación ---
+
 const paymentModal = document.getElementById('payment-modal');
 const confirmationModal = document.getElementById('confirmation-modal');
 const openPaymentModalBtn = document.getElementById('open-payment-modal');
@@ -54,7 +52,7 @@ const closeBtns = document.querySelectorAll('.close-btn');
 const paymentForm = document.getElementById('payment-form');
 const confirmationCloseBtn = document.querySelector('.confirmation-close');
 
-// Abrir Modal de Pago al hacer click en "Proceder al Pago"
+
 openPaymentModalBtn.addEventListener('click', (e) => {
     e.preventDefault();
     paymentModal.style.display = 'block';
@@ -72,7 +70,7 @@ confirmationCloseBtn.addEventListener('click', () => {
     confirmationModal.style.display = 'none';
 });
 
-// Cerrar modales si se hace click fuera de ellos
+
 window.onclick = function(event) {
     if (event.target == paymentModal) {
         paymentModal.style.display = "none";
@@ -82,11 +80,11 @@ window.onclick = function(event) {
     }
 }
 
-// Simulación de Envío del Formulario de Pago
+
 paymentForm.addEventListener('submit', (e) => {
     e.preventDefault();
     
-    // Simulación de validación simple
+
     const cardNumber = document.getElementById('card-number').value.replace(/\s/g, '');
     const cvv = document.getElementById('cvv').value;
 
@@ -95,12 +93,12 @@ paymentForm.addEventListener('submit', (e) => {
         return;
     }
 
-    // SIMULACIÓN DE PROCESO DE PAGO
-    paymentModal.style.display = 'none'; // Cierra el modal de pago
+
+    paymentModal.style.display = 'none'; 
     
-    // Muestra el modal de confirmación
+   
     confirmationModal.style.display = 'block';
     
-    // Opcional: limpiar el formulario después de la "compra"
+ 
     paymentForm.reset();
 });

@@ -71,7 +71,7 @@ body {
 }
 
 .swiper-pagination-bullet-active {
-    background-color: #DB241B; /* Color para el punto activo */
+    background-color: #DB241B; 
 }
 .menu {
   position: absolute;

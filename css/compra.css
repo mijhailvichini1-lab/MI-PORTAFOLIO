@@ -1,4 +1,4 @@
-/* Estilos específicos para la página de compra */
+
 .compra-container {
     max-width: 900px;
     margin: 150px auto 50px auto;
@@ -83,7 +83,7 @@
     background-color: #ab1c15;
 }
 
-/* ESTILOS DE VENTANA FLOTANTE (MODAL) */
+
 .modal {
     display: none;
     position: fixed;
@@ -109,7 +109,6 @@
     animation-duration: 0.4s
 }
 
-/* Animación para que aparezca desde arriba */
 @keyframes animatetop {
     from {top: -300px; opacity: 0}
     to {top: 0; opacity: 1}
@@ -167,10 +166,9 @@
     background-color: #ab1c15;
 }
 
-/* Modal de Confirmación de Compra */
 #confirmation-modal .modal-content {
     text-align: center;
-    border: 1px solid #ab1c15; /* Verde para confirmación */
+    border: 1px solid #ab1c15; 
 }
 
 #confirmation-modal h3 {

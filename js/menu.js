@@ -3,7 +3,7 @@ const btnTacos = document.getElementById("btn-tacos");
 const btnDesayunos = document.getElementById("btn-desayunos");
 const container = document.getElementById("menu-container");
 
-// ==== DATOS DE LOS PRODUCTOS (SIN CAMBIOS) ====
+
 
 const hamburguesas = [
     {
@@ -148,22 +148,22 @@ const desayunos = [
 ];
 
 
-// ==== FUNCION PARA MOSTRAR TARJETAS (CORREGIDA) ====
+
 
 function mostrarProductos(lista){
     container.innerHTML = "";
 
     lista.forEach(producto => {
-        // 1. Limpiamos el precio para obtener solo el número.
+        
         const precioNumerico = producto.precio.replace('Bs ', '').replace(',', '.');
 
-        // 2. Codificamos los datos para la URL.
+        
         const urlName = encodeURIComponent(producto.titulo);
         const urlDesc = encodeURIComponent(producto.desc);
         const urlPrice = encodeURIComponent(precioNumerico);
         const urlImg = encodeURIComponent(producto.img);
 
-        // 3. Construimos la URL completa para el enlace de compra.
+        
         const compraUrl = `comprar.html?name=${urlName}&desc=${urlDesc}&price=${urlPrice}&img=${urlImg}`;
 
         container.innerHTML += `
@@ -181,10 +181,10 @@ function mostrarProductos(lista){
     });
 }
 
-// MOSTRAR HAMBURGUESAS AL INICIO
+
 mostrarProductos(hamburguesas);
 
-// ==== EVENTOS BOTONES (SIN CAMBIOS) ====
+
 
 btnHamburguesa.addEventListener("click", () => {
     activar(btnHamburguesa);
@@ -201,7 +201,7 @@ btnDesayunos.addEventListener("click", () => {
     mostrarProductos(desayunos);
 });
 
-// ==== FUNCION PARA ACTIVAR BOTON (SIN CAMBIOS) ====
+
 
 function activar(boton){
     document.querySelectorAll('.btn').forEach(btn => btn.classList.remove('active'));
